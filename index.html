@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kadai03</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app__header">
+        <h1>クリックゲーム</h1>
+      </div>
+      <div class="app__game">
+        <div class="app__info">
+          <div class="app__counter">
+            <p>スコア:</p>
+            <span id="gameCounter">0</span>
+          </div>
+          <div class="app__timer">
+            <p>カウントダウン:</p>
+            <span id="gameTime">10.0</span>
+          </div>
+        </div>
+
+        <div class="app__area">
+          <button class="app__start" id="startButton">ゲームスタート</button>
+          <div id="game" class="app__container"></div>
+        </div>
+
+        <div class="app__form">
+          <label class="app__input">
+            制限時間を設定 (1-100 秒):
+            <input id="timeInput" type="text" value="10" />
+          </label>
+          <button id="changeTimeButton">決定</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
